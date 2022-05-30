@@ -1,0 +1,210 @@
+body{ background-image: url("fundal.jpg") ;
+    margin-top: 0;
+    color: white;
+}
+
+#planete {
+    grid-area: planete;
+    text-align: center;
+}
+
+#solar{
+    grid-area: solar;
+    grid-column: 100%;
+    text-align: center;
+}
+#soarele{
+    grid-area: soarele;
+    text-align: center;
+}
+
+#mercur{
+    grid-area: mercur;
+    text-align: center;
+}
+
+#venus{
+    grid-area: venus;
+    text-align: center;
+}
+
+#terra{
+    grid-area: terra;
+    text-align: center;
+}
+
+#marte{
+    grid-area: marte;
+    text-align: center;
+}
+
+#jupiter{
+    grid-area: jupiter;
+    text-align: center;
+}
+
+#saturn{
+    grid-area: saturn;
+    text-align: center;
+}
+
+#uranus{
+    grid-area: uranus;
+    text-align: center;
+}
+
+#neptun{
+    grid-area: neptun;
+    text-align: center;
+}
+
+#container-pagina{
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-columns: 33%;
+    grid-template-areas: 
+    'solar solar solar'
+    'planete planete planete'
+    'soarele mercur venus'
+    'terra marte jupiter'
+    'saturn uranus neptun';
+}
+
+#container-pagina > section { border:5px;
+    border-style:groove;
+    padding: 5%;}
+
+#soarele > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#mercur > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#venus > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#terra > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#marte > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#jupiter > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#saturn > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#uranus > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+#neptun > img{
+    transform: rotate(360deg);
+    right:100%;
+    transform: rotate(360deg) scale (0.5);
+        right:50%;
+        animation-name: rotation;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+        animation-play-state: running;
+}
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+header{
+   /* height: 80px;
+    width: 100%;
+    background-color: rgba(45, 201, 201, 0.445);
+    line-height: 80px;
+    margin: 0;
+    padding: 0;*/
+    font-size: 30px;
+    font-weight: 200;
+    background-image: radial-gradient(ellipse, #470aee, #54a9e2);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: rgba(37, 108, 201, 0.753);
+}
+
+@media screen 
+and (device-width: 360px) 
+and (device-height: 640px) 
+and (-webkit-device-pixel-ratio: 4) {
+
+}

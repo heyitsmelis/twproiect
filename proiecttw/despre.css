@@ -1,0 +1,56 @@
+body{ background-image: url("fundal.jpg") ;
+    margin-top: 0;
+    color: white;
+}
+#istoric {
+    grid-area: istoric;
+}
+
+#prezentare{
+    grid-area: prezentare;
+    text-align: center;
+}
+
+#container-pagina{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'prezentare istoric'
+    'gif gif';
+}
+
+#container-pagina > section { border:5px;
+    border-style: dotted;
+padding: 5%;}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(218, 212, 189, 0.226);
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+}   
+
+@keyframes poze {
+    0% {opacity:100%}
+    25% {opacity: 50%;}
+    50%  {opacity:25%;}
+    75% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+
+#poze > img {
+    transform: rotate (360deg);
+    animation-name: poze;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
